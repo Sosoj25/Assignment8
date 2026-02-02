@@ -1,0 +1,135 @@
+/* login.css */
+
+.login-page {
+    min-height: 100vh;
+    background-image: url("/stadium.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.login-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.login-page>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* card */
+
+.login-page .login-card {
+    background: #fff;
+    padding: 36px 32px;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.login-page h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.login-page .subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/* inputs */
+
+.login-page input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.login-page input:focus {
+    outline: none;
+    border-color: #6d28d9;
+}
+
+
+/* buttons */
+
+.login-page .login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #6d28d9;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-page .register-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #22c55e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+}
+
+.forgot {
+    margin-top: 14px;
+    font-size: 13px;
+    color: #666;
+}
+
+.forgot span {
+    color: #6d28d9;
+    cursor: pointer;
+}
+
+.forgot span:hover {
+    text-decoration: underline;
+}
+
+.login-page .register-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #22c55e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    /* ⭐ เพิ่ม */
+}
+
+
+/* hover effect */
+
+.login-page .register-btn:hover {
+    background: #16a34a;
+    /* เขียวเข้มขึ้น */
+    transform: translateY(-2px);
+    /* เด้งนิด ๆ */
+    box-shadow: 0 6px 18px rgba(34, 197, 94, 0.4);
+}
+
+
+/* ตอนกด */
+
+.login-page .register-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(34, 197, 94, 0.3);
+}
